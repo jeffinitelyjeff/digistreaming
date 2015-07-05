@@ -1,0 +1,186 @@
+# {country_code ==> country info}
+# country info:
+# ==> displayName
+countries:
+  US:
+    displayName: the United States
+
+# {dub_type_name ==> dub_type info}
+# dub type info:
+# ==> display name
+# ==> dub
+# ==> sub
+dub_types:
+  eng_dub:
+    display_name: Dub
+    dub: English
+    sub: None
+  eng_sub:
+    display_name: Sub
+    dub: Japanese
+    sub: English
+
+# {season_number ==> season name}
+seasons:
+  1: Adventure
+  2: Adventure 02
+  3: Tamers
+  4: Frontier
+  5: Savers
+  6: Xros Wars
+
+# {dubbing_name => dubbing info}
+# dubbing info:
+# ==> season: display title of season
+# ==> language: language_code
+dubbing_info:
+  1d:
+    season: Adventure
+    language: eng_dub
+  2d:
+    season: Adventure 02
+    language: eng_dub
+  3d:
+    season: Tamers
+    language: eng_dub
+  4d:
+    season: Frontier
+    language: eng_dub
+  5d:
+    season: Data Squad
+    language: eng_dub
+  6d:
+    season: Fusion
+    language: eng_dub
+  1s:
+    season: Adventure
+    language: eng_sub
+  2s:
+    season: Adventure 02
+    language: eng_sub
+  3s:
+    season: Tamers
+    language: eng_sub
+  6s:
+    season: Xros Wars
+    language: eng_sub
+  6d_6:
+    season: Fusion
+    language: eng_dub
+    restrictions: Last 5 episodes that aired
+
+# {service_name => service info}
+service_info:
+  hulu:
+    name: Hulu
+    url: http://www.hulu.com/
+    type: free_with_ads
+  cr:
+    name: Crunchyroll
+    url: http://crunchyroll.com/
+    type: free_with_ads
+  funi:
+    name: Crunchyroll
+    url: http://funimation.com/
+    type: subscription
+  netflix:
+    name: Netflix
+    url: http://netflix.com/
+    type: subscription
+  amazon_prime:
+    name: Amazon Prime Instant Video
+    url: http://www.amazon.com/Prime-Instant-Video/b?node=2676882011
+    type: subscription
+  itunes:
+    name: iTunes
+    url: https://itunes.apple.com/us/genre/tv-shows/id32
+    type: pay_per_video
+  amazon:
+    name: Amazon Instant Video
+    url: http://www.amazon.com/Instant-Video/b?node=2858778011
+    type: pay_per_video
+  google:
+    name: Google Play
+    url: https://play.google.com/store/movies?hl=en
+    type: pay_per_video
+  crackle:
+    name: Crackle
+    url: http://crackle.com/
+    type: free_with_ads
+  daisuki:
+    name: Daisuki
+    url: http://www.daisuki.net/
+    type: free_with_ads
+  viewster:
+    name: Viewster
+    url: http://viewster.com/
+    type: free_with_ads
+
+# {country_code => {service_name => {dubbing_name => link(s)}}}
+availability:
+  US:
+    hulu:
+      1d: http://www.hulu.com/digimon-adventure
+      2d: http://www.hulu.com/digimon-adventure
+      3d: http://www.hulu.com/digimon-tamers
+      4d: http://www.hulu.com/digimon-frontier
+    cr:
+      1d: http://www.crunchyroll.com/digimon-adventure
+      2d: http://www.crunchyroll.com/digimon-adventure-02
+      3d: http://www.crunchyroll.com/digimon-tamers
+      4d: http://www.crunchyroll.com/digimon-frontier
+      6s: http://www.crunchyroll.com/digimon-xros-wars-the-young-hunters-who-leapt-through-time
+    funi:
+      2s: http://www.funimation.com/shows/digimon-adventure-02/home
+    netflix: [1d, 1s, 2d, 2s, 3d, 3s, 6d]
+    itunes:
+      1d:
+        - https://itunes.apple.com/us/tv-season/digimon-adventures-complete/id562026919
+        - https://itunes.apple.com/us/tv-season/digimon-adventures-complete/id562028156
+      2d:
+        - https://itunes.apple.com/us/tv-season/digimon-adventures-complete/id605526727
+        - https://itunes.apple.com/us/tv-season/digimon-adventures-complete/id605528268
+      3d:
+        - https://itunes.apple.com/us/tv-season/digimon-tamers-complete-third/id640157060
+        - https://itunes.apple.com/us/tv-season/digimon-tamers-complete-third/id640158206
+      4d:
+        - https://itunes.apple.com/us/tv-season/digimon-frontier-complete/id685579990
+        - https://itunes.apple.com/us/tv-season/digimon-frontier-complete/id685582608
+      5d:
+        - https://itunes.apple.com/us/tv-season/digimon-data-squad-vol.-1/id808345112
+        - https://itunes.apple.com/us/tv-season/digimon-data-squad-vol.-2/id813782058
+      6d:
+        - https://itunes.apple.com/us/tv-season/digimon-fusion-season-1-vol.-1/id947036854
+        - https://itunes.apple.com/us/tv-season/digimon-fusion-season-1-vol.-2/id947040404
+    amazon:
+      1d:
+        - http://www.amazon.com/gp/product/B009R8XTEA?ref_=atv_dp_season_select_s1
+        - http://www.amazon.com/gp/product/B009R82QNU?ref_=atv_dp_season_select_s2
+      2d:
+        - http://www.amazon.com/gp/product/B00C1BUON4?ref_=atv_dp_season_select_s3
+        - http://www.amazon.com/gp/product/B00C1BV5UA?ref_=atv_dp_season_select_s4
+      3d:
+        - http://www.amazon.com/gp/product/B00DLMSAKQ/ref_=atv_dp_season_select_s1
+        - http://www.amazon.com/gp/product/B00DC7V9GM?ref_=atv_dp_season_select_s2
+      4d: http://www.amazon.com/gp/product/B00F2LKNBI/ref_=atv_dp_season_select_s1
+      5d:
+        - http://www.amazon.com/gp/product/B00IXE4NUI?ref_=atv_dp_season_select_s1
+        - http://www.amazon.com/gp/product/B00IXE689W?ref_=atv_dp_season_select_s2
+      6d: http://www.amazon.com/gp/product/B00TF6OTRK
+    google:
+      6d: https://play.google.com/store/tv/show?id=GI4nmvEo94g
+    crackle: {}
+    daisuki: {}
+    viewster: {}
+    amazon_prime: {}
+  UK:
+    amazon_prime:
+      1d: http://www.amazon.co.uk/gp/product/B00K2144LI
+      2d: http://www.amazon.co.uk/gp/product/B00K215LDI
+      3d: http://www.amazon.co.uk/gp/product/B00K231RM0
+      4d: http://www.amazon.co.uk/gp/product/B00K21OK80
+      5d: http://www.amazon.co.uk/gp/product/B00K6CY148
+    netflix:
+      6d: https://www.netflix.com/title/80000933
+    itv:
+      6d_5: https://www.itv.com/itvplayer/digimon-fusion

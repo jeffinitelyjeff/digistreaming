@@ -1,0 +1,45 @@
+table {
+  width: 100px;
+}
+
+td {
+  vertical-align: top;
+  width: 100px;
+  padding-right: 50px;
+}
+
+th {
+  width: 100px;
+}
+
+small {
+  display: block;
+}
+
+.container {
+  width: 500px;
+}
+
+header .container {
+  width: 600px;
+}
+
+.main-container h4 {
+
+}
+
+/*ul li:before {
+  content: ">>";
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-size: 13px;
+  color: #b5e853;
+  margin-left: -37px;
+  margin-right: 10px;
+  line-height: 16px;
+}
+*/
+
+/* iPad and wider */
+@media (min-width: @screen-sm-min) {
+
+}
